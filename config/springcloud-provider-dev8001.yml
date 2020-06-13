@@ -19,3 +19,8 @@ info:
     build:
       artifactId: $project.artifactId$
       version: $project.version$
+
+endpoints:
+  refresh:
+  enabled: true
+  sensitive: false
