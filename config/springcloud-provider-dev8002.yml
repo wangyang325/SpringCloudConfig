@@ -1,0 +1,26 @@
+### springcloud-provider-dev8002.yml
+server:
+  port: 8002
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservice1-8002
+    prefer-ip-address: true
+
+info:
+  app:
+    name:
+      microservice1-8002
+    company:
+      name: company1
+    build:
+      artifactId: $project.artifactId$
+      version: $project.version$
+
+endpoints:
+  refresh:
+  enabled: true
+  sensitive: false
